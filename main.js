@@ -36,6 +36,15 @@ const init = async () => {
       }
   });
 
+    server.route({
+      method: 'GET',
+      path: '/hello/{name}',
+      handler: (request, h) => {
+        const name = request.params.name;
+        return `Hello ${name}`
+      }
+    })
+
     await server.start();
     console.log('Server running on %s', server.info.uri);
 };
