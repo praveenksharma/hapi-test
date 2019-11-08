@@ -7,5 +7,8 @@ POST http://localhost:3000/getpost
 http://localhost:3000/getpost
 
 ### - Paramater in url
-
 http://localhost:3000/hello/Praveen
+
+### - getdate from plugin
+
+http://localhost:3000/getdate
