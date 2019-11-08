@@ -3,3 +3,11 @@ http://localhost:3000
 ###
 
 POST http://localhost:3000
+
+###
+
+POST http://localhost:3000/getpost
+
+###
+
+http://localhost:3000/getpost

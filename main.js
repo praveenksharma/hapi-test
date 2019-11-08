@@ -1,6 +1,7 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+const util = require('util')
 
 const init = async () => {
 
@@ -10,11 +11,19 @@ const init = async () => {
     });
 
     server.route({
+      method: ['GET', 'POST'],
+      path: '/getpost',
+      handler: (request, h) => {
+        return 'Get Post together';
+      }
+    })
+
+    server.route({
       method: 'GET',
       path: '/',
       handler: (request, h) => {
-        console.log(`request: ${JSON.stringify(request)}`)
-          return 'Hello World!';
+        // console.log(`request: ${util.inspect(request)}`)
+          return 'Hello World1!';
       }
   });
 
