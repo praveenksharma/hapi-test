@@ -1,6 +1,7 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+const Joi = require('@hapi/joi');
 // const util = require('util')
 const getDate = require('./plugins/getDate')
 
@@ -55,6 +56,13 @@ const init = async () => {
     handler: (request, h) => {
       const name = request.params.name;
       return `Hello ${name}`
+    },
+    options: {
+      validate: {
+        params: {
+          name: Joi.string().min(3).max(10)
+        }
+      }
     }
   })
 

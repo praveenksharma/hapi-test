@@ -7,7 +7,7 @@ POST http://localhost:3000/getpost
 http://localhost:3000/getpost
 
 ### - Paramater in url
-http://localhost:3000/hello/Praveen
+http://localhost:3000/hello/praveen
 
 ### - getdate from plugin
 
@@ -24,3 +24,6 @@ Content-Type: application/json
     "lastname": "Sharma"
   }
 }
+
+### - Validation 3 to 10 chars should fail with 400
+http://localhost:3000/hello/ab
