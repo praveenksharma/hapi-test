@@ -12,3 +12,15 @@ http://localhost:3000/hello/Praveen
 ### - getdate from plugin
 
 http://localhost:3000/getdate
+
+### - Saving the user
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "user": {
+    "name": "Praveen",
+    "lastname": "Sharma"
+  }
+}

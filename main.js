@@ -58,6 +58,17 @@ const init = async () => {
     }
   })
 
+  // This function create the user
+  server.route({
+    method: 'POST',
+    path: '/user',
+    handler: (request, h) => {
+      const user = request.payload.user;
+      console.log(JSON.stringify(user))
+      return `user: ${user.name} is saved`
+    }
+  })
+
   await server.start();
   console.log('Server running on %s', server.info.uri);
 };
