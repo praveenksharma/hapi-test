@@ -27,3 +27,11 @@ Content-Type: application/json
 
 ### - Validation 3 to 10 chars should fail with 400
 http://localhost:3000/hello/ab
+
+###
+
+https://ete-pmclaims-esb-appraisals-internal.libertyec.com/AppraisalsMediationModuleWeb/sca/AppraisalsAPIExport1/WEB-INF/wsdl/AppraisalsMediationModule_AppraisalsAPIExport1.wsdl
+
+###
+
+https://ete-pmclaims-esb-appraisals-internal.libertyec.com/AppraisalsMediationModuleWeb/sca/AppraisalsAPIExport1?wsdl
