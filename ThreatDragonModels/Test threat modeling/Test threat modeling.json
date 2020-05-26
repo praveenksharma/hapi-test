@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Test threat modeling",
+    "owner": "Praveen Sharma",
+    "description": "Claimant registration application is an application where 3rd party claimant for Liberty Mutual and Safeco insured can get verified and registered. After registration they can log in and see their claim information and status."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Gary Parker"
+  }
+}
