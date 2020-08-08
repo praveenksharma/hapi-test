@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Claimant Registration Threat Modelling",
+    "owner": "TriCIP",
+    "description": "Claimant Registration System is used to allow third party claimants to register."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Threat Modeling Diagram",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
